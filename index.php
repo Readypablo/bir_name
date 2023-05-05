@@ -70,6 +70,57 @@
 
 </div>
 
+
+
+
+<div class="table_score">
+    <div><h1>Таблица рекордов</h1></div>
+
+    <div class="block_info_records">
+        
+        <div class="name">Имя </div>    
+        <div class="space_bot"></div>    
+        <div class="us_score">Счет</div>    
+    </div>
+
+
+    <?php 
+    require('pagers/db.php');
+    $query= "SELECT * FROM `users` ORDER BY score DESC ";
+    $result = mysqli_query($con, $query) or die;
+    
+    for($data = []; $row = mysqli_fetch_assoc($result); $data[]=$row)
+    $i++;
+    ;
+    $num=0;
+    foreach($data as $elem){
+    $num=$num+1;
+        echo "<div class='block_info_records'>";
+        echo "<div class='id_us'>$num</div>";
+        echo "<div class='name'>".$elem['login']."</div>";
+        echo "<div class='space_bot'></div>   ";
+        echo "<div class='us_score'>".$elem['score']."</div>   ";
+        echo "</div>";
+    }
+    
+
+   
+    ?>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
 </main>
 
 
@@ -77,6 +128,6 @@
 
 
   
-    <script src="../js/script.js"></script>
+<script src="../js/script.js"></script>
 </body>
 </html>
