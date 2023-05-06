@@ -36,6 +36,7 @@
             
             <div id="scin_2">
                 <?php 
+                // првоерка на определенный результат
                 if($_SESSION['score'] >=50){
                     echo"<img src='../img/cool_bird.png' class='scin_img'>";
                 }
@@ -50,6 +51,7 @@
 
             <div id="scin_3">
             <?php 
+              // првоерка на определенный результат
                 if($_SESSION['score'] >=100){
                     echo"<img src='../img/lega.png' class='scin_img'>";
                 }

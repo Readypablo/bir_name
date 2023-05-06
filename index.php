@@ -86,13 +86,15 @@
 
     <?php 
     require('pagers/db.php');
+    // обращаемся к таблице
     $query= "SELECT * FROM `users` ORDER BY score DESC ";
     $result = mysqli_query($con, $query) or die;
-    
+    // опреобразуем строки в таблице в массив
     for($data = []; $row = mysqli_fetch_assoc($result); $data[]=$row)
     $i++;
     ;
     $num=0;
+      // выводим строки из массива в таблицу
     foreach($data as $elem){
     $num=$num+1;
         echo "<div class='block_info_records'>";

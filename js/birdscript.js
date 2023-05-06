@@ -1,9 +1,5 @@
 
 
-
-
-
-
 let cvs = document.getElementById("canvas");
 let ctx = cvs.getContext("2d");
 let restart = document.getElementById("btn-restart");
@@ -24,6 +20,7 @@ let pipeBottom = new Image();
 
 // bird.rotate(inRad(45));
 
+// все изображения
 bird.src = "../img/bird.png";
 bg.src = "../img/bg.png";
 fg.src = "../img/fg.png";
@@ -31,13 +28,17 @@ pipeUp.src = "../img/pipeUp.png";
 pipeBottom.src = "../img/pipeBottom.png";
 
 
-
+//  изображение обычное при нажатия на кнопку
 function daefolt(){
     bird.src="../img/bird.png"
 }
+
+//  изображение "крутое" при нажатия на кнопку
 function cool(){
     bird.src="../img/cool.png"
 }
+
+//  изображение "легенда" при нажатия на кнопку
 function lega(){
     bird.src="../img/lega.png"
 }
@@ -47,8 +48,8 @@ function lega(){
 let fly = new Audio();
 let score_audio = new Audio();
 
-fly.src = "audio/fly.mp3";
-score_audio.src = "audio/score.mp3";
+fly.src = "../audio/fly.mp3";
+score_audio.src = "../audio/score.mp3";
 
 let gap = 90;
 
@@ -99,8 +100,6 @@ ctx.drawImage(fg, 0, cvs.height - fg.height);
 function draw() {
 
     ctx.drawImage(bg, 0, 0);
-
-
 
     for (let i = 0; i < pipe.length; i++) {
 
