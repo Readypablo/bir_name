@@ -8,7 +8,7 @@
     </title>
     <link rel="icon" href="../dorabotki/iconka.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/style.css">
-
+  
 </head>
 <body>
 

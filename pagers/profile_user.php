@@ -8,7 +8,12 @@
 
 <main>
 
+
+<script src="../js/birdscript.js"></script>
 <form  method="post"  class="form_prof">
+
+
+
 
 <h1 class="login-title">Ваш профиль</h1>
 
@@ -26,9 +31,14 @@
 echo"Крутая пташка";
     }else{
         echo"Ну так, дефолт ";
-    } ?>
+    } 
+    
+    if(isset($_POST['game_btn'])){
+        header("Location: main_game.php");
+    }
+    ?>
     </span></p>
-    <button class="login-button"> <a href="main_game.php">Играть</a></button>
+    <button class="login-button" name ="game_btn"> <a href="main_game.php">Играть</a></button>
     <button class="login-button-logaut"> <a href="logaut.php">Выход</a></button>
   
     </div>

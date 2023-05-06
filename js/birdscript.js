@@ -1,3 +1,9 @@
+
+
+
+
+
+
 let cvs = document.getElementById("canvas");
 let ctx = cvs.getContext("2d");
 let restart = document.getElementById("btn-restart");

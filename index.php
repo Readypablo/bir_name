@@ -8,7 +8,7 @@
     </title>
     <link rel="icon" href="../dorabotki/iconka.ico" type="image/x-icon">
     <link rel="stylesheet" href="../style/style.css">
-
+    <script src="js/birdscript.js"></script>
 </head>
 <body>
 
@@ -126,8 +126,6 @@
 
 
 
-
-  
-<script src="../js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

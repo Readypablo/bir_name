@@ -40,7 +40,7 @@
 
 
 <main>
-
+<script src="../js/birdscript.js"></script>
 <form  method="post">
 
 <h1 class="login-title">Вход</h1>

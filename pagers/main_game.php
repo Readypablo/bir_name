@@ -8,9 +8,12 @@
 
 <div class="flex">
 
-    <div class="canvas_game">
-        <canvas id="canvas" width="288" height="512"></canvas>
 
+    <div class="canvas_game">
+
+
+        <canvas id="canvas" width="288" height="512"></canvas>
+       
         <input type="button" value="Играть" id="btn-restart" onclick="restart_btn()">
 
         <input type="button" value="Играть" id="btn-start" onclick="start_btn()">

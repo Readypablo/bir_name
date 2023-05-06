@@ -61,7 +61,7 @@ else{
 
 
 <main>
-
+<script src="../js/birdscript.js"></script>
 
 
 <form  method="post" id="reg">
